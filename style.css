@@ -1,0 +1,124 @@
+/* *common css */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "PT Sans", sans-serif;
+    --primary-color: #FFCC00;
+    --secondary-color:#353535;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+ width: 1106px;
+ margin: auto;
+}
+.row{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--font-family);
+}
+.align-center{
+ align-items: center;
+}
+.btn{
+    border-radius: 20px;
+    padding: 22px 45px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+    border: 1px solid transparent;
+
+}
+.btn .two{
+ background-color: transparent;
+ border: 1px solid  var(--secondary-color);
+ color: var(--secondary-color);
+}
+/* *common css end */
+
+/*nav start */
+nav .logo{
+   width: 30%;
+    
+
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 200%;
+    color: var(--secondary-color);
+    padding: 18px 22px 5px;
+    display: inline-block;
+    position: relative;
+}
+
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.45s;
+}
+nav .menu ul li:hover a::after{
+ width: 100%;
+}
+/*nav end */
+
+/* hero section start */
+#hero{
+    margin-top: 56px;
+}
+#hero .herotext,
+#hero .heroimage{
+    width: 50%;
+}
+
+#hero .herotext h4{
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--secondary-color)
+ 
+}
+#hero .herotext h1{
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--secondary-color);
+    margin: 15px 0 25px;
+}
+ #hero .heotext p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color: var(--secondary-color);
+ }
+
+/* hero section end */
